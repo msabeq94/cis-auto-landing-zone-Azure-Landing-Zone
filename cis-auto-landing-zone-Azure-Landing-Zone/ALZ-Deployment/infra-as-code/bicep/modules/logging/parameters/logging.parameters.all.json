@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parLogAnalyticsWorkspaceName": {
+      "value": "alz-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceLocation": {
+      "value": "customerLocation"
+    },
+    "parLogAnalyticsWorkspaceSkuName": {
+      "value": "PerGB2018"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": 365
+    },
+    
+    "parAutomationAccountName": {
+      "value": "alz-automation-account"
+    },
+    "parAutomationAccountLocation": {
+      "value": "customerLocation"
+    },
+    "parTags": {
+      "value": {
+        "Environment": "azl"
+      }
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}
